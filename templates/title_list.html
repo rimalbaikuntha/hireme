@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titles</title>
+    </head>
+    <body>
+        <button><a href="/title_add">Add New</a> </button>
+
+
+
+        {% for jobtitle in jobtitles %}
+            <p>
+                {{ jobtitle.title }}
+                <button>
+                    <a href="">Update</a>
+                </button>
+                <button>
+                    <a href="">Delete</a>
+                </button>
+            </p>
+        {% endfor %}
+    </body>
+</html>

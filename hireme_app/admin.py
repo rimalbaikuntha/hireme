@@ -1,3 +1,4 @@
 from django.contrib import admin
+from hireme_app.models import Jobtitle
 
-# Register your models here.
+admin.site.register(Jobtitle)
